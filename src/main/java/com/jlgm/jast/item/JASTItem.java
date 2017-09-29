@@ -6,7 +6,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 
 public class JASTItem {
@@ -35,22 +37,22 @@ public class JASTItem {
 	}
 	
 	public static void renderItem(){
-		RenderItem renderItem = Minecraft.getMinecraft().getRenderItem();
-		
-		renderItem.getItemModelMesher().register(firestick_Item, 0,
+		ModelLoader.setCustomModelResourceLocation(firestick_Item, 0,
 				new ModelResourceLocation(JASTConstants.MODID + ":" + "firestick", "inventory"));
 		
-		renderItem.getItemModelMesher().register(firebow_Item, 0,
+		ModelLoader.setCustomModelResourceLocation(firebow_Item, 0,
 				new ModelResourceLocation(JASTConstants.MODID + ":" + "firebow", "inventory"));
 		
-		renderItem.getItemModelMesher().register(magnesium_Item, 0,
+		ModelLoader.setCustomModelResourceLocation(magnesium_Item, 0,
 				new ModelResourceLocation(JASTConstants.MODID + ":" + "magnesium", "inventory"));
 		
-		renderItem.getItemModelMesher().register(knife_Item, 0,
+		ModelLoader.setCustomModelResourceLocation(knife_Item, 0,
 				new ModelResourceLocation(JASTConstants.MODID + ":" + "knife", "inventory"));
 		
-		renderItem.getItemModelMesher().register(sleepbag_Item, 0,
-				new ModelResourceLocation(JASTConstants.MODID + ":" + "sleepbag", "inventory"));
+		for(int i = 0; i < 16; i++) {
+			ModelLoader.setCustomModelResourceLocation(sleepbag_Item, i,
+					new ModelResourceLocation(JASTConstants.MODID + ":" + "sleepbag_" + EnumDyeColor.byMetadata(i).getUnlocalizedName(), "inventory"));
+		}
 		
 	}
 }
