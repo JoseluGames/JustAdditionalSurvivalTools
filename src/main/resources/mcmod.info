@@ -1,0 +1,16 @@
+[
+{
+  "modid": "jlgm_jast",
+  "name": "Just Additional Survival Tools",
+  "description": "Additional survival tools",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://minecraft.curseforge.com/projects/particle-generator",
+  "updateUrl": "",
+  "authorList": ["JoseluGames"],
+  "credits": "SpicePhantom for the idea!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

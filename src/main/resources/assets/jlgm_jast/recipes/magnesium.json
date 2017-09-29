@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:flint"
+		},
+		{
+			"item": "minecraft:dye",
+			"data": 15
+		},
+		{
+			"item": "minecraft:glowstone_dust"
+		},
+		{
+			"item": "minecraft:stick"
+		}
+	],
+	"result": {
+		"item": "magnesium"
+	}
+}

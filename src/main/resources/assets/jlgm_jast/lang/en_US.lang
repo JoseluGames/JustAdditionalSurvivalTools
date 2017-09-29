@@ -1,0 +1,9 @@
+item.firestick.name=Firestick
+item.firebow.name=Firebow
+item.magnesium.name=Magnesium Firestarter
+item.knife.name=Survival Knife
+item.sleepbag.name=Sleepbag
+
+item.firestarter.noburnable=That's not a burnable item.
+item.firestarter.onlyburnable=You can only use this item on burnable blocks.
+item.sleepbag.spawnpoint=Spawn point set.
