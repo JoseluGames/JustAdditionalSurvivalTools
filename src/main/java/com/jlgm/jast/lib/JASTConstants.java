@@ -15,7 +15,7 @@ public class JASTConstants{
 	//The version of the mod
 	public static final String VERSION = MAJOR + "." + MINOR + "." + PATCH + RELEASETYPE;
 	//The Minecraft verstion this mod is focused to work with
-	public static final String ACCEPTEDMINECRAFTVERSIONS = "[1.12.2]";
+	public static final String ACCEPTEDMINECRAFTVERSIONS = "[1.12,)";
 	
 	//The package route of the proxys
 	public static final String CLIENT_PROXY = "com.jlgm.jast.main.JASTClientProxy";
