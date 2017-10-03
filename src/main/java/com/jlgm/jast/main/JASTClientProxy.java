@@ -1,5 +1,6 @@
 package com.jlgm.jast.main;
 
+import com.jlgm.jast.block.JASTBlock;
 import com.jlgm.jast.item.JASTItem;
 
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -29,6 +30,7 @@ public class JASTClientProxy extends JASTCommonProxy{
 	
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
+		JASTBlock.renderBlock();
 		JASTItem.renderItem();
 	}
 }

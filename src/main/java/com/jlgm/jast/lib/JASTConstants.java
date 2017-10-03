@@ -8,8 +8,8 @@ public class JASTConstants{
 	
 	//Version parts ( https://mcforge.readthedocs.io/en/latest/conventions/versioning/ )
 	public static final String MAJOR = "0";
-	public static final String MINOR = "0";
-	public static final String PATCH = "1";
+	public static final String MINOR = "1";
+	public static final String PATCH = "0";
 	public static final String RELEASETYPE = "";
 	
 	//The version of the mod
